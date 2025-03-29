@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SJWUWU 個人網站</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #005377;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="image.png" alt="SJWUWU 照片">
+    <h1 id="site-title">吳志宇博士 個人網站</h1>
+    <p id="site-tagline">濕地生態學｜環境永續｜科學傳播</p>
+    <nav>
+      <button onclick="setLanguage('zh')">🇹🇼 中文</button>
+      <button onclick="setLanguage('en')">🇬🇧 English</button>
+    </nav>
+  </header>
+
+  <section>
+    <h2 id="about-title">關於我</h2>
+    <p id="about-text">
+      現任於某大學環境科學研究中心，專注於濕地保育、生態監測與永續發展。
+    </p>
+
+    <h2 id="research-title">研究興趣</h2>
+    <p id="research-text">
+      包括生物多樣性、生態工程、環境教育、社區參與與永續管理。
+    </p>
+
+    <h2 id="publications-title">作品與發表</h2>
+    <ul id="publications-list">
+      <li>2024 - 濕地與鳥類：人與自然的對話</li>
+      <li>2023 - 生態工程在都市河川的應用</li>
+    </ul>
+
+    <h2 id="contact-title">聯絡方式</h2>
+    <p id="contact-text">
+      📧 Email: example@email.com<br>
+      🔗 <a href="#">LinkedIn</a> | <a href="#">Google Scholar</a>
+    </p>
+  </section>
+
+  <script>
+    const zh = {
+      title: "吳志宇博士 個人網站",
+      tagline: "濕地生態學｜環境永續｜科學傳播",
+      aboutTitle: "關於我",
+      aboutText: "現任於某大學環境科學研究中心，專注於濕地保育、生態監測與永續發展。",
+      researchTitle: "研究興趣",
+      researchText: "包括生物多樣性、生態工程、環境教育、社區參與與永續管理。",
+      publicationsTitle: "作品與發表",
+      contactTitle: "聯絡方式",
+      contactText: "📧 Email: example@email.com<br>🔗 <a href='#'>LinkedIn</a> | <a href='#'>Google Scholar</a>"
+    };
+
+    const en = {
+      title: "Dr. Chih-Yu Wu Personal Website",
+      tagline: "Wetland Ecology | Sustainability | Science Communication",
+      aboutTitle: "About Me",
+      aboutText: "Currently working at an environmental science research center focusing on wetland conservation, ecological monitoring, and sustainability.",
+      researchTitle: "Research Interests",
+      researchText: "Biodiversity, eco-engineering, environmental education, community engagement, and sustainable management.",
+      publicationsTitle: "Publications & Projects",
+      contactTitle: "Contact",
+      contactText: "📧 Email: example@email.com<br>🔗 <a href='#'>LinkedIn</a> | <a href='#'>Google Scholar</a>"
+    };
+
+    function setLanguage(lang) {
+      const dict = lang === 'en' ? en : zh;
+      document.getElementById('site-title').textContent = dict.title;
+      document.getElementById('site-tagline').textContent = dict.tagline;
+      document.getElementById('about-title').textContent = dict.aboutTitle;
+      document.getElementById('about-text').textContent = dict.aboutText;
+      document.getElementById('research-title').textContent = dict.researchTitle;
+      document.getElementById('research-text').textContent = dict.researchText;
+      document.getElementById('publications-title').textContent = dict.publicationsTitle;
+      document.getElementById('contact-title').textContent = dict.contactTitle;
+      document.getElementById('contact-text').innerHTML = dict.contactText;
+    }
+  </script>
+</body>
+</html>
