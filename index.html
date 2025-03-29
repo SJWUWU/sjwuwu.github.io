@@ -15,20 +15,24 @@
     }
     header {
       background: #f5f5f5;
-      text-align: center;
+      display: flex;
+      align-items: center;
       padding: 2rem 1rem;
+      justify-content: flex-start;
+      box-sizing: border-box;
     }
     header img {
-      width: 120px;
+      width: 250px;
       border-radius: 50%;
+      margin-right: 1.5rem;
     }
     h1 {
       margin: 0.5rem 0 0.2rem;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
     p.tagline {
       margin: 0;
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #555;
     }
     nav {
@@ -51,7 +55,7 @@
       margin-bottom: 2.5rem;
     }
     h2 {
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       margin-bottom: 0.5rem;
       border-bottom: 1px solid #eee;
       padding-bottom: 0.2rem;
@@ -85,8 +89,10 @@
 <body>
   <header>
     <img src="imageSJ.png" alt="吳思儒 Szu-Ju Wu">
-    <h1 id="site-title">吳思儒 Szu-Ju Wu</h1>
-    <p class="tagline" id="site-tagline">濕地生態學｜永續規劃｜科學傳播</p>
+    <div>
+      <h1 id="site-title">吳思儒 Szu-Ju Wu</h1>
+      <p class="tagline" id="site-tagline">濕地生態學｜永續規劃｜科學傳播</p>
+    </div>
     <nav>
       <button onclick="setLanguage('zh')">中文</button>
       <button onclick="setLanguage('en')">English</button>
@@ -94,91 +100,33 @@
   </header>
   <main>
     <section id="zh" class="lang-content active">
-      <h2>完整經歷與發表資料</h2>
+      <h2>學歷 Education</h2>
       <pre>
-【工作經歷 Work Experience】
-景澤創意有限公司 創辦人 Vision Union Ltd. Founder（2014-）
-大浪據文化有限公司 創辦人 Big Swell Ltd. Founder（2016-）
-三時生活實驗室 創辦人 Sanshi living Lab Founder（2017-）
-中央研究院生物多樣性研究中心 研究助理（2010–2013）
 
-【公共參與 Social Participation】
-台灣濕地學會 第六屆 秘書長（2024-）
-華江溼地守護聯盟 螃蟹組 組長（2014-）
-國慶社區發展協會 第八屆 理事長（2020）
-貳拾號公民會所 創辦人（2010-）
-川流之島流域學校 創辦人（2020-）
+【學歷】
+國立台灣師範大學永續管理與環境教育研究所 博士
+國立臺北大學自然資源與環境管理研究所 碩士
 
-【技能 Skills】
-永續管理、環境教育、自然資源管理、水資源管理、參與式規劃、公共參與、展覽策劃。
-
-【發表 Publish】
-｜期刊文章｜
-（逐條完整顯示所有期刊論文，略）
-
-｜書籍編輯｜
-（逐條完整顯示出版書籍，略）
-
-｜研討會論文｜
-（逐條完整顯示所有研討會發表，略）
-
-【專案 Project】
-（逐條完整列出專案主持人職責與委託單位，略）
-
-【策展 Exhibitions】
-（逐條完整列出策展活動、時間、地點與雙語標題，略）
-
-【聯絡方式 Contact Info】
-吳思儒 Szu-Ju Wu
-電話：886-2581-1365
+聯絡方式 Contact Info
 Email：szuscholar@gmail.com
 Google Scholar: <a href="https://scholar.google.com/citations?user=JxwZaZgAAAAJ&hl=zh-TW">szujuwu</a>
-地址：104 臺北市新生北路二段129-2號
-No. 129-2, Sec. 2, Xinsheng N. Rd., Zhongshan Dist., Taipei City, Taiwan
+LinkedIn: <a href="https://www.linkedin.com/in/szujuwu/">LinkedIn</a>
       </pre>
     </section>
 
     <section id="en" class="lang-content">
-      <h2>Complete CV and Publications</h2>
+      <h2>Education</h2>
       <pre>
-【Work Experience】
-Founder, Vision Union Ltd. (2014–)
-Founder, Big Swell Ltd. (2016–)
-Founder, Sanshi Living Lab (2017–)
-Research Assistant, Biodiversity Research Center, Academia Sinica (2010–2013)
 
-【Social Participation】
-6th Secretary General, Taiwan Wetland Society (2024–)
-Crab Team Leader, Huajiang Wetland Conservation Alliance (2014–)
-8th Chairman, Guo-Chìng Community Development Association (2020)
-Founder, No. 20 Citizens’ Club (2010–)
-Founder, Do for River Basin School (2020–)
+【Education】
+Doctorate: National Taiwan Normal University, Institute of Sustainable Management and Environmental Education.
 
-【Skills】
-Sustainable Management, Environmental Education, Natural Resource Management, Water Resources Management, Participatory Planning, Public Participation, Exhibition Planning
+Master's: National Taipei University, Institute of Natural Resources and Environmental Management.
 
-【Publications】
-｜Journal Articles｜
-(Full listing omitted for brevity)
-
-｜Book Editing｜
-(Full listing omitted for brevity)
-
-｜Conference Papers｜
-(Full listing omitted for brevity)
-
-【Projects】
-(Principal Investigator details and agencies listed in full, omitted here)
-
-【Exhibitions】
-(Fully bilingual titles and venues listed, omitted here)
-
-【Contact Info】
-Szu-Ju Wu
-Tel: 886-2581-1365
+Contact Info
 Email: szuscholar@gmail.com
 Google Scholar: <a href="https://scholar.google.com/citations?user=JxwZaZgAAAAJ&hl=zh-TW">szujuwu</a>
-Address: No. 129-2, Sec. 2, Xinsheng N. Rd., Zhongshan Dist., Taipei City 104, Taiwan
+LinkedIn: <a href="https://www.linkedin.com/in/szujuwu/">LinkedIn</a>
       </pre>
     </section>
   </main>
