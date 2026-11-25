@@ -1,142 +1,865 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>吳思儒 Szu-Ju Wu</title>
-  <style>
-    body {
-      font-family: "Helvetica Neue", sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #ffffff;
-      color: #222;
-      line-height: 1.6;
-    }
-    header {
-      background: #f5f5f5;
-      display: flex;
-      align-items: center;
-      padding: 2rem 1rem;
-      justify-content: center;
-      box-sizing: border-box;
-    }
-    header img {
-      width: 250px;
-      border-radius: 50%;
-      margin-right: 1.5rem;
-    }
-    h1 {
-      margin: 0.5rem 0 0.2rem;
-      font-size: 1.8rem;
-    }
-    p.tagline {
-      margin: 0;
-      font-size: 1.1rem;
-      color: #555;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav button {
-      background: none;
-      border: 1px solid #ccc;
-      padding: 0.4rem 1rem;
-      margin: 0 0.3rem;
-      cursor: pointer;
-      font-size: 0.9rem;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 2.5rem;
-    }
-    h2 {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 0.2rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    a {
-      color: #007B7F;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    pre {
-      white-space: pre-wrap;
-      word-wrap: break-word;
-      background: #f9f9f9;
-      padding: 1rem;
-      border-left: 4px solid #ccc;
-      font-size: 0.95rem;
-    }
-    .lang-content {
-      display: none;
-    }
-    .lang-content.active {
-      display: block;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>吳思儒 Szu-Ju Wu｜個人官網</title>
+<meta name="description" content="吳思儒 Szu-Ju Wu，永續管理與環境教育博士，關注人文田野、生態調查、社區營造、環境教育與策展。">
+<link rel="canonical" href="https://sjwuwu.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="吳思儒 Szu-Ju Wu｜個人官網">
+<meta property="og:description" content="吳思儒 Szu-Ju Wu，永續管理與環境教育博士，關注人文田野、生態調查、社區營造、環境教育與策展。">
+<meta property="og:url" content="https://sjwuwu.github.io/">
+<meta property="og:image" content="https://sjwuwu.github.io/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"吳思儒","alternateName":"Szu-Ju Wu","url":"https://sjwuwu.github.io/","image":"https://sjwuwu.github.io/portrait.jpg","email":"mailto:szuju@visionunion.com.tw","jobTitle":"執行長 CEO","worksFor":{"@type":"Organization","name":"景澤創意 Vision Union","url":"https://www.visionunion.com.tw"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"國立臺灣師範大學"},{"@type":"CollegeOrUniversity","name":"國立臺北大學"},{"@type":"CollegeOrUniversity","name":"淡江大學"}],"sameAs":["https://orcid.org/0009-0003-7119-587X","https://www.linkedin.com/in/szu-ju-wu-6ab262135","https://scholar.google.com.tw/citations?user=JxwZaZgAAAAJ"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;family=Noto+Serif+TC:wght@600;700&amp;display=swap">
+<style>
+body{margin:0;background:#F2F5F6}
+html{scroll-behavior:smooth}
+a{color:#1C6A7A}a:hover{color:#144F5B}
+</style>
+<style>summary::-webkit-details-marker{display:none} details[open] summary{display:none !important} img{max-width:100%}</style>
 </head>
 <body>
-  <header>
-    <img src="imageSJ.png" alt="吳思儒 Szu-Ju Wu">
-    <div>
-      <h1 id="site-title">吳思儒 Szu-Ju Wu</h1>
-      <p class="tagline" id="site-tagline">濕地生態學｜永續規劃｜科學傳播</p>
-    </div>
-    <nav>
-      <button onclick="setLanguage('zh')">中文</button>
-      <button onclick="setLanguage('en')">English</button>
-    </nav>
-  </header>
-  <main>
-    <section id="zh" class="lang-content active">
-      <h2>學歷 Education</h2>
-      <pre>
+<div style="min-height: 100vh; background: #F2F5F6; color: #10242B; font-family: 'Noto Sans TC', system-ui, sans-serif; font-size: 16px; line-height: 1.75">
 
-【學歷】
-國立台灣師範大學永續管理與環境教育研究所 博士
-國立臺北大學自然資源與環境管理研究所 碩士
+<!-- Header -->
+<header style="background: #10242B; color: #E8F0F2; border-bottom: 1px solid #263E46">
+<div style="max-width: 1160px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+<a href="#top" style="color: #E8F0F2; text-decoration: none; display: flex; align-items: baseline; gap: 10px; min-height: 44px; align-items: center">
+<span style="font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: 22px; letter-spacing: 0.08em">吳思儒</span>
+<span style="font-size: 14px; color: #A6C3C9; letter-spacing: 0.04em">Szu-Ju Wu</span>
+</a>
+<nav aria-label="主選單 Main" style="display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 15px">
+<a href="#about" style="color: #E8F0F2; text-decoration: none; min-height: 44px; display: flex; align-items: center">關於 About</a>
+<a href="#ventures" style="color: #E8F0F2; text-decoration: none; min-height: 44px; display: flex; align-items: center">創辦事業 Ventures</a>
+<a href="#work" style="color: #E8F0F2; text-decoration: none; min-height: 44px; display: flex; align-items: center">代表計畫 Work</a>
+<a href="#publications" style="color: #E8F0F2; text-decoration: none; min-height: 44px; display: flex; align-items: center">學術發表 Publications</a>
+<a href="#writing" style="color: #E8F0F2; text-decoration: none; min-height: 44px; display: flex; align-items: center">文章 Writing</a>
+<a href="#contact" style="color: #E8F0F2; text-decoration: none; min-height: 44px; display: flex; align-items: center">聯繫 Contact</a>
+</nav>
+</div>
+</header>
 
-聯絡方式 Contact Info
-Email：szuscholar@gmail.com
-Google Scholar: <a href="https://scholar.google.com/citations?user=JxwZaZgAAAAJ&hl=zh-TW">szujuwu</a>
-LinkedIn: <a href="https://www.linkedin.com/in/szujuwu/">LinkedIn</a>
-      </pre>
-    </section>
+<!-- Hero -->
+<section id="top" style="background: #10242B; color: #E8F0F2; position: relative; overflow: hidden">
+<svg aria-hidden="true" viewBox="0 0 1440 520" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: 0; width: 100%; height: 320px; pointer-events: none">
+<path d="M0 380 C 240 320, 420 440, 720 380 S 1200 300, 1440 360" fill="none" stroke="#20404A" stroke-width="1.5"></path>
+<path d="M0 420 C 260 360, 460 480, 760 420 S 1220 340, 1440 400" fill="none" stroke="#20404A" stroke-width="1.5"></path>
+<path d="M0 460 C 280 400, 500 520, 800 460 S 1240 380, 1440 440" fill="none" stroke="#285059" stroke-width="1.5"></path>
+<path d="M0 500 C 300 440, 540 560, 840 500 S 1260 420, 1440 480" fill="none" stroke="#285059" stroke-width="1.5"></path>
+</svg>
+<div style="position: relative; max-width: 1160px; margin: 0 auto; padding: 88px 24px 112px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 56px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 22px">
+<p style="margin: 0; font-size: 14px; letter-spacing: 0.12em; color: #8CC8D2">跨界・分享・行動<br>Connect. Share. Act.</p>
+<h1 style="margin: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: clamp(22px, 3vw, 30px); line-height: 1.3; letter-spacing: 0.06em">吳思儒</span>
+<span style="font-size: clamp(22px, 3vw, 30px); font-weight: 500; color: #C6DADF; letter-spacing: 0.04em">Szu-Ju Wu</span>
+</h1>
+<p style="margin: 0; font-size: 17px; color: #D3E2E6; max-width: 34em">國立臺灣師範大學永續管理與環境教育研究所博士，關注人文田野、生態調查、社區營造、環境教育與策展。</p>
+<p style="margin: -8px 0 0; font-size: 15px; color: #A6C3C9; max-width: 38em">PhD in Sustainability Management and Environmental Education, National Taiwan Normal University (2024), focusing on cultural fieldwork, ecological survey, community building, environmental education and curation.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
+<a href="#about" style="min-height: 48px; display: inline-flex; align-items: center; padding: 0 24px; border-radius: 4px; background: #8CC8D2; color: #0D2329; text-decoration: none; font-weight: 700; font-size: 15px">認識我 About me</a>
+<a href="#contact" style="min-height: 48px; display: inline-flex; align-items: center; padding: 0 24px; border-radius: 4px; border: 1px solid #6A8F98; color: #E8F0F2; text-decoration: none; font-weight: 500; font-size: 15px">合作洽詢 Get in touch</a>
+</div>
+</div>
+<figure style="margin: 0; justify-self: center; width: min(100%, 420px)">
+<img src="portrait.jpg" width="2048" height="1280" fetchpriority="high" alt="吳思儒穿著青蛙裝站在長滿睡蓮的濕地池中 Szu-Ju Wu standing in a lily-covered wetland pond in waders" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 45%; border-radius: 4px">
+</figure>
+</div>
+</section>
 
-    <section id="en" class="lang-content">
-      <h2>Education</h2>
-      <pre>
+<!-- Timeline strip -->
+<section aria-label="里程碑 Milestones" style="background: #E4ECEE; border-bottom: 1px solid #D3DDE0">
+<ol style="list-style: none; margin: 0 auto; max-width: 1160px; padding: 32px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 24px">
+<li style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 30px; font-weight: 700; color: #1C6A7A">2013</span>
+<span style="font-weight: 500">貳拾號公民會所</span>
+<span style="font-size: 14px; color: #475A60">No. 20 Civic House</span>
+<span style="margin-top: 6px; padding-top: 6px; border-top: 1px solid #C7D3D7; font-size: 13px; color: #123E47">公共空間經營與社會設計</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 30px; font-weight: 700; color: #1C6A7A">2015</span>
+<span style="font-weight: 500">社區規劃師</span>
+<span style="font-size: 14px; color: #475A60">Community planner</span>
+<span style="margin-top: 6px; padding-top: 6px; border-top: 1px solid #C7D3D7; font-size: 13px; color: #123E47">社區參與式規劃</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 30px; font-weight: 700; color: #1C6A7A">2017</span>
+<span style="font-weight: 500">新北濕地藝術季</span>
+<span style="font-size: 14px; color: #475A60">Wetland Art Festival</span>
+<span style="margin-top: 6px; padding-top: 6px; border-top: 1px solid #C7D3D7; font-size: 13px; color: #123E47">環境藝術與策展</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 30px; font-weight: 700; color: #1C6A7A">2020</span>
+<span style="font-weight: 500">川流之島流域學校</span>
+<span style="font-size: 14px; color: #475A60">River Island Watershed School</span>
+<span style="margin-top: 6px; padding-top: 6px; border-top: 1px solid #C7D3D7; font-size: 13px; color: #123E47">環境教育與公民科學</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 30px; font-weight: 700; color: #1C6A7A">2023</span>
+<span style="font-weight: 500">蛙抵家 AI 辨識</span>
+<span style="font-size: 14px; color: #475A60">Identifrog AI</span>
+<span style="margin-top: 6px; padding-top: 6px; border-top: 1px solid #C7D3D7; font-size: 13px; color: #123E47">生態調查與 AI 監測</span>
+</li>
+</ol>
+</section>
 
-【Education】
-Doctorate: National Taiwan Normal University, Institute of Sustainable Management and Environmental Education.
+<!-- About -->
+<section id="about" style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div>
+<p style="margin: 0 0 8px; font-size: 14px; letter-spacing: 0.12em; color: #1C6A7A; font-weight: 700">01 · ABOUT</p>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 40px; line-height: 1.25">關於</h2>
+<p style="margin: 4px 0 0; font-size: 18px; color: #475A60">About Szu-Ju</p>
+</div>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<p style="margin: 0; max-width: 880px; font-size: 18px">國立臺灣師範大學永續管理與環境教育研究所博士、國立臺北大學自然資源與環境管理研究所碩士、淡江大學水資源及環境工程學系學士。曾任職於生態實驗室與非政府組織，長期關注人文與生態永續議題，專注在跨專業的實驗中找尋解決之道。2013 年創立貳拾號公民會所，2014 年創立景澤創意，之後陸續創辦三時生活實驗室、大浪據文化、川流之島流域學校。</p>
+<p style="margin: 0; max-width: 880px; font-size: 16px; color: #384A50">Szu-Ju Wu earned a PhD (2024) from the Graduate Institute of Sustainability Management and Environmental Education at National Taiwan Normal University, a master’s degree in Natural Resources and Environmental Management from National Taipei University, and a bachelor’s in Water Resources and Environmental Engineering from Tamkang University. After working in an ecology lab and with NGOs, Szu-Ju opened No. 20 Civic House in 2013 and founded Vision Union in 2014, then went on to start San Shi Living Lab, Big Swell Data and the River Island Watershed School.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 20px">
+<div style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 24px 26px">
+<h3 style="margin: 0 0 12px; font-size: 17px">學歷與認證 <span style="font-weight: 400; color: #475A60; font-size: 14px">Education &amp; Credentials</span></h3>
+<ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 10px; font-size: 15px">
+<li>國立臺灣師範大學 永續管理與環境教育研究所 博士<br><span style="color: #475A60; font-size: 14px">PhD, Sustainability Management &amp; Environmental Education, NTNU</span></li>
+<li>國立臺北大學 自然資源與環境管理研究所 碩士<br><span style="color: #475A60; font-size: 14px">MS, Natural Resources &amp; Environmental Management, NTPU</span></li>
+<li>淡江大學 水資源及環境工程學系 學士<br><span style="color: #475A60; font-size: 14px">BS, Water Resources &amp; Environmental Engineering, TKU</span></li>
+<li>環境教育人員認證<br><span style="color: #475A60; font-size: 14px">Certified Environmental Educator (Taiwan)</span></li>
+</ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 24px 26px">
+<h3 style="margin: 0 0 14px; font-size: 17px">專長 <span style="font-weight: 400; color: #475A60; font-size: 14px">Expertise</span></h3>
+<ul style="list-style: none; margin: 0; padding: 0">
+<li style="padding: 12px 0; border-top: 1px solid #E1E8EA"><span style="font-size: 15px">公共空間經營與社會設計</span><br><span style="font-size: 13px; color: #475A60">Civic space &amp; social design</span><br><span style="font-size: 13px; color: #1C6A7A; font-weight: 500">2013 貳拾號公民會所</span></li>
+<li style="padding: 12px 0; border-top: 1px solid #E1E8EA"><span style="font-size: 15px">社區參與式規劃</span><br><span style="font-size: 13px; color: #475A60">Participatory community planning</span><br><span style="font-size: 13px; color: #1C6A7A; font-weight: 500">2015 社區規劃師</span></li>
+<li style="padding: 12px 0; border-top: 1px solid #E1E8EA"><span style="font-size: 15px">環境藝術與策展</span><br><span style="font-size: 13px; color: #475A60">Environmental art &amp; curation</span><br><span style="font-size: 13px; color: #1C6A7A; font-weight: 500">2017 新北濕地藝術季</span></li>
+<li style="padding: 12px 0; border-top: 1px solid #E1E8EA"><span style="font-size: 15px">環境教育與公民科學</span><br><span style="font-size: 13px; color: #475A60">Environmental education &amp; citizen science</span><br><span style="font-size: 13px; color: #1C6A7A; font-weight: 500">2020 川流之島流域學校</span></li>
+<li style="padding: 12px 0; border-top: 1px solid #E1E8EA"><span style="font-size: 15px">生態調查與 AI 監測</span><br><span style="font-size: 13px; color: #475A60">Ecological survey &amp; AI monitoring</span><br><span style="font-size: 13px; color: #1C6A7A; font-weight: 500">2023 蛙抵家 AI 辨識</span></li>
+</ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 24px 26px">
+<h3 style="margin: 0 0 12px; font-size: 17px">公共服務與獲獎 <span style="font-weight: 400; color: #475A60; font-size: 14px">Service &amp; Awards</span></h3>
+<ul style="list-style: none; margin: 0; padding: 0">
+<li style="padding: 12px 0; border-top: 1px solid #E1E8EA"><span style="font-size: 15px">台灣濕地學會 秘書長</span><br><span style="font-size: 13px; color: #475A60">Secretary-General, Taiwan Wetland Society</span></li>
+<li style="padding: 12px 0; border-top: 1px solid #E1E8EA"><span style="font-size: 15px">臺北市華江濕地守護聯盟 常務理事</span><br><span style="font-size: 13px; color: #475A60">Executive Director, Huajiang Wetland Guardian Alliance, Taipei</span></li>
+<li style="padding: 12px 0; border-top: 1px solid #E1E8EA"><span style="font-size: 15px">第 22 屆 KEEP WALKING 夢想資助計畫得主</span><br><span style="font-size: 13px; color: #475A60">22nd KEEP WALKING Dream Fund</span><br><span style="font-size: 13px; color: #1C6A7A; font-weight: 500">2026 蛙抵家 Identifrog</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
 
-Master's: National Taipei University, Institute of Natural Resources and Environmental Management.
+<!-- Ventures -->
+<section id="ventures" style="background: #E4ECEE; border-top: 1px solid #D3DDE0; border-bottom: 1px solid #D3DDE0">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div>
+<p style="margin: 0 0 8px; font-size: 14px; letter-spacing: 0.12em; color: #1C6A7A; font-weight: 700">02 · VENTURES</p>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 40px; line-height: 1.25">創辦事業</h2>
+<p style="margin: 4px 0 0; font-size: 18px; color: #475A60">Organisations I founded and lead</p>
+</div>
+<p style="margin: 0; max-width: 30em; color: #384A50; font-size: 15px">從公司、媒體、商店到學校，每個事業都是一種讓人重新與環境連結的方法。<br><span style="color: #475A60">A studio, a media platform, a shop and a school — each a different way to reconnect people with their environment.</span></p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px">
 
-Contact Info
-Email: szuscholar@gmail.com
-Google Scholar: <a href="https://scholar.google.com/citations?user=JxwZaZgAAAAJ&hl=zh-TW">szujuwu</a>
-LinkedIn: <a href="https://www.linkedin.com/in/szujuwu/">LinkedIn</a>
-      </pre>
-    </section>
-  </main>
-  <script>
-    function setLanguage(lang) {
-      document.querySelectorAll('.lang-content').forEach(el => {
-        el.classList.remove('active');
-      });
-      document.getElementById(lang).classList.add('active');
-    }
-  </script>
+<article id="v-no20" style="scroll-margin-top: 88px; background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">2013 · 創辦人 Founder</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 26px; line-height: 1.3">貳拾號公民會所<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">No. 20 Civic House</span></h3>
+<p style="margin: 0; font-size: 15px">透過公共事務的討論、參與及行動，回應公民社會。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">A civic space that responds to civil society through public discussion, participation and action.</p>
+</article>
+
+<article id="v-visionunion" style="scroll-margin-top: 88px; background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">2014 · 執行長 CEO</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 26px; line-height: 1.3">景澤創意<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">Vision Union</span></h3>
+<p style="margin: 0; font-size: 15px">跨領域團隊，承接環境管理、環境教育、社區營造、空間與視覺設計及媒體行銷。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">A cross-disciplinary studio for environmental management, education, community building, spatial and visual design, and media.</p>
+<a href="https://www.visionunion.com.tw" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">visionunion.com.tw<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+<article id="v-sanshi" style="scroll-margin-top: 88px; background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">2017 · 創辦人 Founder</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 26px; line-height: 1.3">三時生活實驗室<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">San Shi Living Lab</span></h3>
+<p style="margin: 0; font-size: 15px">位於台北錦州街的無包裝商店，不定期辦理永續相關活動。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">A package-free shop on Jinzhou Street, Taipei, hosting sustainability events from time to time.</p>
+<a href="https://store.sanshilivinglab.com.tw/" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">store.sanshilivinglab.com.tw<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+<article id="v-bigswell" style="scroll-margin-top: 88px; background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">2020 · 創辦 Founder</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 26px; line-height: 1.3">大浪聚<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">Big Swell</span></h3>
+<p style="margin: 0; font-size: 15px">環境與人文媒體平台，以文章、影音、課程與市集記錄並推動永續議題。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">A media platform on environment and culture — stories, video, courses and a market.</p>
+<a href="https://bigswell.com.tw" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">bigswell.com.tw<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+<article id="v-watershed" style="scroll-margin-top: 88px; background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">2020 · 創辦人 Founder</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 26px; line-height: 1.3">川流之島流域學校<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">River Island Watershed School</span></h3>
+<p style="margin: 0; font-size: 15px">以公民科學、人文田野與流域生態調查，培養關心河川的公民。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">Citizen science, field study and watershed surveys for people who care about rivers.</p>
+<a href="https://doriver.com.tw" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">doriver.com.tw<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+<article id="v-identifrog" style="scroll-margin-top: 88px; background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">景澤創意開發 By Vision Union</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 26px; line-height: 1.3">蛙抵家<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">Identifrog</span></h3>
+<p style="margin: 0; font-size: 15px">可辨識 38 種蛙類鳴聲的 App，並推動全民蛙鳴調查。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">An app that identifies the calls of 38 frog species and powers a public frog-call survey.</p>
+<a href="https://identifrog.com.tw" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">identifrog.com.tw<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+</div>
+<article id="v-bigswelldata" style="scroll-margin-top: 88px; background: #10242B; color: #E8F0F2; border-radius: 6px; padding: 40px 36px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 40px">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 40em">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #8CC8D2">創辦・負責人 FOUNDER</p>
+</div>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 32px; line-height: 1.3">大浪據文化<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: 500; color: #C6DADF">Big Swell Data</span></h3>
+<p style="margin: 0; font-size: 16px; color: #D3E2E6">結合人文洞察與科學監測，轉譯複雜系統。以田野調查與長期生態監測為基礎，為企業與公部門提供社會人文洞察、環境生態科學、公民科學與數據轉化的永續解方。</p>
+<p style="margin: 0; font-size: 14px; color: #A6C3C9">Pairing human insight with scientific monitoring to make complex systems legible — field research and long-term ecological data turned into sustainability solutions for companies and the public sector.</p>
+</div>
+<a href="https://www.bigswelldata.com.tw/" style="min-height: 48px; display: inline-flex; align-items: center; gap: 8px; padding: 0 22px; border-radius: 4px; background: #8CC8D2; color: #0D2329; text-decoration: none; font-weight: 700; font-size: 15px">前往官網 Visit site<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px">
+<div style="border: 1px solid #2A4A53; border-radius: 6px; padding: 22px 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-weight: 700">社子島周邊濕地鳥類調查<br><span style="font-weight: 400; font-size: 13px; color: #A6C3C9">Shezi Island wetlands · since 2018</span></p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #8CC8D2">102</span><span style="font-size: 12px; color: #A6C3C9">場調查 surveys</span></div>
+<div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #8CC8D2">117</span><span style="font-size: 12px; color: #A6C3C9">種鳥類 species</span></div>
+<div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #8CC8D2">49,135</span><span style="font-size: 12px; color: #A6C3C9">隻次 records</span></div>
+</div>
+</div>
+<div style="border: 1px solid #2A4A53; border-radius: 6px; padding: 22px 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-weight: 700">三峽河鳥類公民調查<br><span style="font-weight: 400; font-size: 13px; color: #A6C3C9">Sanxia River citizen survey · since 2021</span></p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #8CC8D2">71</span><span style="font-size: 12px; color: #A6C3C9">場調查 surveys</span></div>
+<div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #8CC8D2">92</span><span style="font-size: 12px; color: #A6C3C9">種鳥類 species</span></div>
+<div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #8CC8D2">24,701</span><span style="font-size: 12px; color: #A6C3C9">隻次 records</span></div>
+</div>
+</div>
+<div style="border: 1px solid #2A4A53; border-radius: 6px; padding: 22px 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-weight: 700">廣興濕地鳥類調查<br><span style="font-weight: 400; font-size: 13px; color: #A6C3C9">Guangxing Wetland · since 2025</span></p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #8CC8D2">12</span><span style="font-size: 12px; color: #A6C3C9">場調查 surveys</span></div>
+<div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #8CC8D2">72</span><span style="font-size: 12px; color: #A6C3C9">種鳥類 species</span></div>
+<div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #8CC8D2">993</span><span style="font-size: 12px; color: #A6C3C9">隻次 records</span></div>
+</div>
+</div>
+</div>
+<p style="margin: 0; font-size: 13px; color: #A6C3C9">工作方法：田野 → 監測 → 分析 → 轉譯 → 行動｜Method: field · monitoring · analysis · translation · action。數據統計至 2026 年 11 月（廣興濕地至 2025 年 12 月），來源：大浪據文化官網。</p>
+</article>
+</div>
+</section>
+
+<!-- Selected work -->
+<section id="work" style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div>
+<p style="margin: 0 0 8px; font-size: 14px; letter-spacing: 0.12em; color: #1C6A7A; font-weight: 700">03 · SELECTED WORK</p>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 40px; line-height: 1.25">代表計畫</h2>
+<p style="margin: 4px 0 0; font-size: 18px; color: #475A60">Selected projects</p>
+</div>
+<p style="margin: 0; max-width: 30em; color: #384A50; font-size: 15px">從歷年委託與標案中精選。<br><span style="color: #475A60">Selected from commissioned projects.</span></p>
+</div>
+
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr))">
+<img src="festival.jpg" width="850" height="566" loading="lazy" decoding="async" alt="穿著青蛙裝走進人工濕地的參與者 Participants in waders walking into the constructed wetland" style="display: block; width: 100%; height: 100%; min-height: 360px; object-fit: cover; object-position: 50% 50%">
+<div style="padding: 36px 36px 32px; display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">2017– · 主辦｜新北市政府高灘地工程管理處　執行｜景澤創意</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 32px; line-height: 1.3">新北濕地藝術季<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: 500; color: #475A60">Wetland Art Festival of New Taipei City</span></h3>
+<blockquote style="margin: 4px 0; padding: 4px 0 4px 18px; border-left: 3px solid #1C6A7A; font-family: 'Noto Serif TC', serif; font-size: 22px; font-weight: 600; line-height: 1.5">「邀請藝術家一起走進濕地的創作之旅。」<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 400; font-style: italic; color: #475A60">“Inviting artists to walk into the wetland, and create together.”</span></blockquote>
+<p style="margin: 0; font-size: 16px">新北市自 2004 年起在大漢溪沿岸建了 8 座人工濕地，默默淨化城市二十年。新北市政府高灘地工程管理處自 2017 年起在新海二期人工濕地主辦藝術季，讓這片城市的綠色基盤被看見。景澤創意承辦歷屆執行，讓藝術創作結合環境教育活動。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">Since 2004 New Taipei has built eight constructed wetlands along the Dahan River. Since 2017 the city’s High Riverbank Construction Management Office has hosted the festival at the Xinhai Phase II wetland, with Vision Union producing every edition and pairing the artworks with environmental education programmes.</p>
+<div style="margin-top: 8px; padding-top: 18px; border-top: 1px solid #D3DDE0; display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 12px"><div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #1C6A7A">7</span><span style="font-size: 13px; color: #475A60">屆 editions</span></div><div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #1C6A7A">50+</span><span style="font-size: 13px; color: #475A60">位國內外藝術家 artists</span></div><div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #1C6A7A">50 萬+</span><span style="font-size: 13px; color: #475A60">累積參與人次 visits</span></div><div><span style="display: block; font-family: 'Noto Serif TC', serif; font-size: 26px; font-weight: 700; color: #1C6A7A">100+</span><span style="font-size: 13px; color: #475A60">場活動與工作坊 events</span></div></div>
+<ol aria-label="歷屆主題 Editions" style="list-style: none; margin: 4px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px"><li style="padding: 10px 12px; border-left: 2px solid #1C6A7A"><strong style="display: block; font-size: 14px; color: #1C6A7A">2017</strong><span style="font-size: 15px">濕地律動</span><br><span style="font-size: 12px; color: #475A60">Wetland Rhythm</span></li><li style="padding: 10px 12px; border-left: 2px solid #1C6A7A"><strong style="display: block; font-size: 14px; color: #1C6A7A">2018</strong><span style="font-size: 15px">共生</span><br><span style="font-size: 12px; color: #475A60">Coexistence</span></li><li style="padding: 10px 12px; border-left: 2px solid #1C6A7A"><strong style="display: block; font-size: 14px; color: #1C6A7A">2019</strong><span style="font-size: 15px">交融</span><br><span style="font-size: 12px; color: #475A60">Confluence</span></li><li style="padding: 10px 12px; border-left: 2px solid #1C6A7A"><strong style="display: block; font-size: 14px; color: #1C6A7A">2022</strong><span style="font-size: 15px">川流堆疊</span><br><span style="font-size: 12px; color: #475A60">Layers of the River</span></li><li style="padding: 10px 12px; border-left: 2px solid #1C6A7A"><strong style="display: block; font-size: 14px; color: #1C6A7A">2023</strong><span style="font-size: 15px">匯聚</span><br><span style="font-size: 12px; color: #475A60">Gathering</span></li><li style="padding: 10px 12px; border-left: 2px solid #1C6A7A"><strong style="display: block; font-size: 14px; color: #1C6A7A">2025</strong><span style="font-size: 15px">種籽之旅</span><br><span style="font-size: 12px; color: #475A60">The Journey of Seeds</span></li><li style="padding: 10px 12px; border-left: 2px solid #1C6A7A"><strong style="display: block; font-size: 14px; color: #1C6A7A">2026</strong><span style="font-size: 15px">萌芽之境</span><br><span style="font-size: 12px; color: #475A60">Where Seeds Sprout</span></li></ol>
+<p style="margin: 4px 0 0; font-size: 14px; color: #384A50">陪伴也成為研究：2018、2024 年兩篇研討會論文評估藝術季的環境教育成效。<a href="#publications" style="color: #1C6A7A">看學術發表</a><br><span style="color: #475A60">The festival is also a research site: papers in 2018 and 2024 assess its environmental-education impact.</span></p>
+<a href="https://www.visionunion.com.tw/newtaipeicitywetlandartfestival" style="margin-top: 4px; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">歷年回顧 Past editions<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</div>
+</article>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 20px">
+
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">2019– · 場館營運 VENUE OPERATION</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 24px; line-height: 1.35">臺北記憶倉庫<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">Taipei Info Hub</span></h3>
+<p style="margin: 0; font-size: 15px">北門旁的紅磚倉庫，1913 年由三井物產興建，至今仍留有三井菱形商標；2016 年整棟向東遷移 51 公尺保存，2018 年以「記憶倉庫」重新開放。景澤受臺北市文化局委託營運，以淡水河流域與城市歷史策畫展覽與教育推廣，一樓設川流之島書店。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">A red-brick warehouse built by Mitsui in 1913 beside Beimen, moved 51 m east in 2016 and reopened in 2018. Vision Union runs it for Taipei’s Department of Cultural Affairs, with exhibitions on the Tamsui River and the city and the River Island bookshop downstairs.</p>
+<a href="https://www.visionunion.com.tw/2024%E8%87%BA%E5%8C%97%E8%A8%98%E6%86%B6%E5%80%89%E5%BA%AB%E5%A7%94%E8%A8%97%E7%87%9F%E9%81%8B%E7%AE%A1%E7%90%86" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">2024 營運成果 2024 report<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">2026 · KEEP WALKING 夢想資助計畫得主</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 24px; line-height: 1.35">蛙抵家<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">Identifrog</span></h3>
+<p style="margin: 0; font-size: 15px">AI 蛙鳴聲紋辨識 App，讓一般民眾也能參與生態監測，經三位蛙類專家複核，累積有效紀錄已超過 8,000 筆。2026 年獲第 22 屆 KEEP WALKING 夢想資助計畫支持。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">An AI frog-call identification app that lets anyone take part in ecological monitoring; with every recording checked by three frog experts, it has gathered more than 8,000 valid records. Backed by the 22nd KEEP WALKING Dream Fund in 2026.</p>
+<a href="https://identifrog.com.tw" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">identifrog.com.tw<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">2022 · 策展人 CURATOR</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 24px; line-height: 1.35">新竹市美術館《感知自然》<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">Perceiving Nature, Hsinchu City Art Gallery</span></h3>
+<p style="margin: 0; font-size: 15px">美術館年度主軸「生存信仰」的首檔展覽。邀請王菁華、范欽慧、李蕢至、劉辰岫、林安琪 Ciwas Tahos，在虛實交錯的時代，重新思考人如何感知新竹的土地與生活環境。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">The opening show of the gallery’s 2022 programme: five artists on how we sense land and environment when real and virtual blur.</p>
+<a href="https://artogo.co/en/exhibition/perceivingnature" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">線上展覽 Online exhibition<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">場域輔導 SITE CERTIFICATION</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 24px; line-height: 1.35">環境教育場域認證<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">Environmental education site certification</span></h3>
+<p style="margin: 0; font-size: 15px">從場域規劃、課程方案到志工培訓，協助場域通過環境教育設施場所認證與展延：八德埤塘自然生態公園、龜山苗圃綠環境生態園區、劍潭山環境教育館、貴子坑水土保持園區。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">Planning, programmes and volunteer training that took four sites in Taoyuan and Taipei through national environmental-education certification.</p>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">2018 · 臺北市都市發展局委託</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 24px; line-height: 1.35">富錦街街道規劃原則<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">Fujin Street design principles</span></h3>
+<p style="margin: 0; font-size: 15px">以社區參與規劃人行道。調查 500 公尺街道上的 203 棵路樹，在老樹竄根與行人安全之間，和居民一起訂出街道規劃原則。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">Participatory sidewalk planning: surveying 203 street trees along 500 m and setting principles with residents that balance old trees and pedestrian safety.</p>
+<a href="https://www.villagetaipei.net/Post?PId=14381" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">規劃經驗分享 Read the story<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.08em; color: #475A60">2016 · 社區營造 COMMUNITY DESIGN</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 24px; line-height: 1.35">北門街區招牌設計準則<br><span style="font-family: 'Noto Sans TC', sans-serif; font-size: 15px; font-weight: 500; color: #475A60">Signage guidelines around Beimen</span></h3>
+<p style="margin: 0; font-size: 15px">臺北市政府都市更新處委託。為國定古蹟北門周邊街區研擬招牌設計原則，與店家進行廣告物示範操作，2017 年在撫臺街洋樓辦「北門街招資訊展」，成果出版為《北門街招成果彙編》。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">Sign design principles for the streets around the North Gate, a national monument, tested with local shops through demonstration projects.</p>
+<a href="https://issuu.com/villagetaipei/docs/2017-_-_63a91cf5471a27" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">成果彙編 Project report<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+</div>
+</section>
+
+<!-- Publications -->
+<section id="publications" style="max-width: 1160px; margin: 0 auto; padding: 32px 24px 96px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div>
+<p style="margin: 0 0 8px; font-size: 14px; letter-spacing: 0.12em; color: #1C6A7A; font-weight: 700">04 · PUBLICATIONS</p>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 40px; line-height: 1.25">學術發表</h2>
+<p style="margin: 4px 0 0; font-size: 18px; color: #475A60">Research on wetlands, citizen science and environmental education</p>
+<div style="margin-top: 8px; display: flex; flex-wrap: wrap; gap: 0 24px">
+<a href="https://scholar.google.com.tw/citations?user=JxwZaZgAAAAJ&amp;hl=zh-TW" style="min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">Google Scholar 個人頁 Profile<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+<a href="https://orcid.org/0009-0003-7119-587X" style="min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 15px; color: #1C6A7A">ORCID 0009-0003-7119-587X<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</div>
+</div>
+<p style="margin: 0; max-width: 30em; color: #384A50; font-size: 15px">4 篇期刊論文、3 本專書、36 篇研討會發表。<br><span style="color: #475A60">4 journal articles, 3 books and 36 conference presentations.</span></p>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 20px">期刊論文 <span style="font-weight: 400; font-size: 15px; color: #475A60">Journal articles</span></h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 16px">
+
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-top: 3px solid #1C6A7A; border-radius: 6px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.06em; color: #475A60">2026.09 · <em>CoDesign</em>, 1–27</p>
+<h4 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 600; line-height: 1.45">Listening with frogs: sonic thick mapping for more-than-human participation</h4>
+<p style="margin: 0; font-size: 14px; color: #384A50">Chen, Y.-F., <strong>Wu, S.-J.</strong>, &amp; Su, T.-Y.</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">與「蛙抵家」蛙鳴辨識計畫相關｜Grounded in the Identifrog frog-call project</p>
+<a href="https://doi.org/10.1080/15710882.2026.2726166" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 500; color: #1C6A7A">doi:10.1080/15710882.2026.2726166<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-top: 3px solid #1C6A7A; border-radius: 6px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.06em; color: #475A60">2024.06 · 農業工程學報 70(2)</p>
+<h4 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 600; line-height: 1.45">遊客餵食行為對於流路型埤塘水質影響：以八德埤塘自然生態公園為例</h4>
+<p style="margin: 0; font-size: 14px; color: #475A60">How visitor feeding affects water quality in a flow-through farm pond, Bade Pond Ecological Park, Taoyuan</p>
+<p style="margin: 0; font-size: 14px; color: #384A50"><strong>吳思儒</strong>、朱淳懿、謝智元、林柏安、王之佑、方偉達</p>
+<a href="https://doi.org/10.29974/JTAE.202406_70(2).0004" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 500; color: #1C6A7A">doi:10.29974/JTAE.202406_70(2).0004<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-top: 3px solid #1C6A7A; border-radius: 6px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.06em; color: #475A60">2023.12 · 農業工程學報 69(4)</p>
+<h4 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 600; line-height: 1.45">人造感潮濕地蘆葦管理機制及其對棲地影響</h4>
+<p style="margin: 0; font-size: 14px; color: #475A60">Reed management in a constructed tidal wetland and its effects on habitat</p>
+<p style="margin: 0; font-size: 14px; color: #384A50"><strong>吳思儒</strong>、黃耀陞、黃國文、陳建志、方偉達</p>
+<a href="https://doi.org/10.29974/JTAE.202312_69(4).0003" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 500; color: #1C6A7A">doi:10.29974/JTAE.202312_69(4).0003<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-top: 3px solid #1C6A7A; border-radius: 6px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.06em; color: #475A60">2023.11 · <em>Land</em> 12(11): 2036</p>
+<h4 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 600; line-height: 1.45">Influence of Landscape Preference and Place Attachment on Responsible Environmental Behavior: A Study of Taipei’s Guandu Nature Park Wetlands, Taiwan</h4>
+<p style="margin: 0; font-size: 14px; color: #384A50"><strong>Wu, S.-J.</strong>, Ng, E., Lin, K.-B., Cheng, Y.-H., LePage, B. A., &amp; Fang, W.-T.</p>
+<a href="https://doi.org/10.3390/land12112036" style="margin-top: auto; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 500; color: #1C6A7A">doi:10.3390/land12112036<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</article>
+
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 20px">專書 <span style="font-weight: 400; font-size: 15px; color: #475A60">Books</span></h3>
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px 40px">
+<div style="display: flex; flex-direction: column; gap: 10px; grid-column: span 2; min-width: 0">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.06em; color: #475A60">2016 · 景澤創意執行 BY VISION UNION</p>
+<h4 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 24px; font-weight: 600; line-height: 1.4">北門街招成果彙編</h4>
+<p style="margin: 0; font-size: 14px; color: #475A60">Beimen Street Signs: Project Report</p>
+<p style="margin: 0; font-size: 15px">北門周邊社區營造：廣告物示範操作的完整紀錄，從店家溝通、招牌設計到街區景觀。</p>
+</div>
+<dl style="margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<div><dt style="font-size: 12px; letter-spacing: 0.08em; color: #475A60">出版 PUBLISHER</dt><dd style="margin: 2px 0 0">臺北市政府都市更新處</dd></div>
+<div><dt style="font-size: 12px; letter-spacing: 0.08em; color: #475A60">線上閱讀 READ ONLINE</dt><dd style="margin: 0"><a href="https://issuu.com/villagetaipei/docs/2017-_-_63a91cf5471a27" style="min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; color: #1C6A7A">Issuu<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a></dd></div>
+</dl>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px 40px">
+<div style="display: flex; flex-direction: column; gap: 10px; grid-column: span 2; min-width: 0">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.06em; color: #475A60">2021.05 · 總編輯 EDITOR-IN-CHIEF</p>
+<h4 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 24px; font-weight: 600; line-height: 1.4">與野共生<br><span style="font-size: 17px">國有林區治理工程友善生態圖輯</span></h4>
+<p style="margin: 0; font-size: 14px; color: #475A60">Living with the Wild: An Illustrated Guide to Eco-friendly Engineering in Taiwan’s National Forests</p>
+<p style="margin: 0; font-size: 15px">收錄全臺 16 個國有林地治理工程案例，以文字、照片與插畫說明工程如何減少對動物與棲地的衝擊。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">Sixteen cases from across Taiwan, explained in text, photos and illustrations, showing how forest engineering can reduce its impact on wildlife and habitats.</p>
+</div>
+<dl style="margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<div><dt style="font-size: 12px; letter-spacing: 0.08em; color: #475A60">編者 EDITORS</dt><dd style="margin: 2px 0 0">景澤創意有限公司 執行・<strong>吳思儒</strong> 總編輯・紀宛妤 主編</dd></div>
+<div><dt style="font-size: 12px; letter-spacing: 0.08em; color: #475A60">出版 PUBLISHER</dt><dd style="margin: 2px 0 0">行政院農業委員會林務局（今農業部林業及自然保育署）</dd></div>
+<div><dt style="font-size: 12px; letter-spacing: 0.08em; color: #475A60">ISBN・GPN</dt><dd style="margin: 2px 0 0">9789865455309・1011000588</dd></div>
+<div><dt style="font-size: 12px; letter-spacing: 0.08em; color: #475A60">書目 LISTINGS</dt><dd style="margin: 0; display: flex; flex-wrap: wrap; gap: 0 18px">
+<a href="https://www.govbooks.com.tw/books/132041" style="min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; color: #1C6A7A">國家網路書店<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+<a href="https://gpi.culture.tw/books/1011000588" style="min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; color: #1C6A7A">政府出版品資訊網 GPI<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</dd></div>
+</dl>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px 40px">
+<div style="display: flex; flex-direction: column; gap: 10px; grid-column: span 2; min-width: 0">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.06em; color: #475A60">2022.01 · 總編輯 EDITOR-IN-CHIEF</p>
+<h4 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 24px; font-weight: 600; line-height: 1.4">社區林業零距離<br><span style="font-size: 17px">生態調查指南</span></h4>
+<p style="margin: 0; font-size: 14px; color: #475A60">Community Forestry Up Close: A Guide to Ecological Surveys</p>
+<p style="margin: 0; font-size: 15px">寫給執行社區林業計畫的社區與部落，用循序漸進的步驟教居民盤點身邊的動植物資源，把生態調查變成公民科學行動。</p>
+<p style="margin: 0; font-size: 14px; color: #475A60">A step-by-step guide for communities in Taiwan’s community forestry programme, helping residents survey local plants and animals and turn that work into citizen science.</p>
+</div>
+<dl style="margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<div><dt style="font-size: 12px; letter-spacing: 0.08em; color: #475A60">編者 EDITORS</dt><dd style="margin: 2px 0 0">景澤創意有限公司 執行・<strong>吳思儒</strong> 總編輯・陳柏宏 主編</dd></div>
+<div><dt style="font-size: 12px; letter-spacing: 0.08em; color: #475A60">出版 PUBLISHER</dt><dd style="margin: 2px 0 0">農業部林業及自然保育署</dd></div>
+<div><dt style="font-size: 12px; letter-spacing: 0.08em; color: #475A60">ISBN・GPN</dt><dd style="margin: 2px 0 0">9786267100530・1011100058</dd></div>
+<div><dt style="font-size: 12px; letter-spacing: 0.08em; color: #475A60">書目 LISTINGS</dt><dd style="margin: 0; display: flex; flex-wrap: wrap; gap: 0 18px">
+<a href="https://gpi.culture.tw/books/1011100058" style="min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; color: #1C6A7A">政府出版品資訊網 GPI<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</dd></div>
+</dl>
+</article>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0 0 8px; font-size: 20px">研討會發表 <span style="font-weight: 400; font-size: 15px; color: #475A60">Conference presentations</span></h3>
+<ol style="list-style: none; margin: 0; padding: 0; border-top: 1px solid #C7D3D7">
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2026</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">Enhancing the management of estuarine mangrove blue carbon through high-frequency IoT monitoring</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">Wu, S.-J., Lin, H.-J., Wang, H.-Y., &amp; Hung, S.-H.</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">7th Mangrove Macrobenthos and Management Conference (MMM7), Ishigaki, Japan · Flash talk &amp; poster</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2026</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">廣興濕地公園周邊鳥類相季節關係初探</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">李明晃、王毓婷、吳思儒</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十七屆台灣濕地生態系研討會・文化大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2026</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">反國光石化後之彰化海岸國際濕地劃設與推動</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">施月英、王毓婷、吳思儒</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十七屆台灣濕地生態系研討會・文化大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2026</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">融合傳統知識與自然解方之埤塘濕地保育成效研究：以社區鬼稻復育與企業 ESG 行動為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">黃彥霖、謝智元、吳思儒</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十七屆台灣濕地生態系研討會・文化大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2026</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">基於 IoT 即時水質監測之紅樹林藍碳動態管理策略研究</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、林幸助、王洵瀅</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十七屆台灣濕地生態系研討會・文化大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2026</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">橋樑改建工程對溪流鳥類之衝擊影響：以三峽河長福橋為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、何一先、鄧伊辰、王洵瀅</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十七屆台灣濕地生態系研討會・文化大學・海報</p>
+</div>
+</li>
+
+</ol>
+<details style="margin-top: 0">
+<summary style="align-self: flex-start; margin-top: 12px; min-height: 48px; padding: 0 22px; border-radius: 4px; border: 1px solid #1C6A7A; background: #FFFFFF; color: #1C6A7A; font: inherit; font-weight: 700; font-size: 15px; cursor: pointer; display: inline-flex; align-items: center; list-style: none">顯示其他 30 篇 Show 30 more</summary>
+<ol style="list-style: none; margin: 0; padding: 0; border-top: 0">
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2025</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">臺北記憶倉庫觀眾知覺價值、滿意度與忠誠度關係之研究</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、余家萱、賴靜怡</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第35屆環境教育學術暨實務交流國際研討會・國立臺灣科學教育館・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2025</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">紅樹林林分結構與紅樹蜆族群分布之關聯初探：以挖子尾自然保留區為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、朱淳懿、王洵瀅、林柏安、謝智元、鄧伊辰</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十六屆台灣濕地生態系研討會・國立嘉義大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2024</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">Exploring the Effectiveness of Collaborative Environmental Art in Community Wetland Environmental Education: A Case Study of the “New Taipei Wetland Art Festival”</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">Szu-Ju Wu, Yi-Chen Chien</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">8th ISEPST, Kyoto, Japan</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2024</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">臺北市華江濕地地形變化對於底棲生物之影響</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、陳建志、林柏安、阮韞澈、郭子嘉</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十五屆台灣濕地生態系研討會・國立臺灣師範大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2024</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">挖子尾濕地生態系服務地圖化應用初探</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、王毓婷、方偉達</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十五屆台灣濕地生態系研討會・國立臺灣師範大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2024</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">不同農法水梯田之蛙類組成變化初探</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、陳建志、林柏安</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十五屆台灣濕地生態系研討會・國立臺灣師範大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2024</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">社子島濕地營造與鳥類相的變化</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、何一先、林柏安、王毓婷、蕭任珽</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十五屆台灣濕地生態系研討會・國立臺灣師範大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2023</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">生態系服務美學之空間分佈初探：以廣興濕地為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、王毓婷、王辰云</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">台灣地理資訊學會年會暨學術研討會・成功大學・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2023</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">臺北華江濕地內河道底棲無脊椎動物數量與水質關係初探</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、陳建志、陳柏曄、林柏安、阮韞澈、郭子嘉</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十四屆台灣濕地生態系研討會・成功大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2023</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">遊客餵食行為對於埤塘水質影響研究</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、朱淳懿、謝智元、林柏安、王之佑、方偉達</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十四屆台灣濕地生態系研討會・成功大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2023</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">挖子尾溼地周邊居民生態系服務認知初探</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">阮韞澈、吳思儒</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十四屆台灣濕地生態系研討會・成功大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2023</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">三峽河流域家燕與赤腰燕燕巢偏好的地理分析</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">何一先、吳思儒、王毓婷</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十四屆台灣濕地生態系研討會・成功大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2022</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">活動滿意度、地方感依附對於負責任環境行為影響：以新北市濕地割稻體驗活動為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、朱淳懿、簡翊真、裘有勳、方偉達</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第32屆環境教育學術暨實務交流國際研討會・清華大學南大校區・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2022</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">以使用者經驗設計開發公民科學行動應用程式：以「蛙抵家」為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">陳彥甫、吳思儒、蘇泰元</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">2022 台灣感性學會暨台灣數位媒體設計學會國際研討會・台東大學・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2022</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">公民科學 App 蛙抵家的開發工作：深度學習應用於蛙鳴辨識</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">蘇泰元、吳思儒、陳彥甫、游承翰</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第32屆環境教育學術暨實務交流國際研討會・清華大學南大校區・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2021</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">應用 AR 技術於河川人文與生態教育：以新店溪流域為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、陳彥甫、方偉達</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">2021 國際濕地大會・中央研究院・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2021</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">公私協力的流域守護行動初探：以台灣三峽河段為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、張禾玫、陳柏宏、阮韞澈、方偉達</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十二屆台灣濕地生態系研討會・國立臺灣師範大學・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2021</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">峨眉湖環湖步道及周邊淺山地區鳥類生物多樣性及群聚關係比較運用於生態旅遊建議</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">陳柏宏、何一先、陳建志、黃柏崴、吳思儒</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十二屆台灣濕地生態系研討會・國立臺灣師範大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2020</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">濕地空間景觀偏好與負責任環境行為關係兼論地方依附中介效果：以關渡自然公園為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、方偉達、鄭以芯、林楷博</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">2020 環境教育研討會・海洋科技博物館・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2020</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">流域復育與地方創生</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、張震宇</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十一屆台灣濕地生態系研討會・文化大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2020</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">大漢新店國家重要濕地臺灣蜆分佈初探</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、郭子嘉、陳建志</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第十一屆台灣濕地生態系研討會・文化大學・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2019</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">Wetland Management: The Impact of Reed Height on Migratory Birds</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">Szu-Ju Wu, Wei-Ta Fang, Chia-Chien Li, Chien-Chin Chen, Szu-Kuang Wu</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">European Ornithologists’ Union Conference 2019, Cluj, Romania</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2018</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">濕地藝術環境行動對志工環境教育之成效評估：以新北濕地藝術季為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、鄭以芯、方偉達</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">2018 國際濕地大會・富邦國際會議中心・海報</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2017</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">人工濕地管理與環境藝術初探：以蘆葦為創作材料</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第八屆台灣濕地生態系研討會暨第二屆國家公園濕地研究成果發表會・惠蓀林場・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2017</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">蘆葦生長管理整合性濕地管理：以社子島人工濕地蘆葦生長管理為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、蔡易廷、陳建志</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第八屆台灣濕地生態系研討會暨第二屆國家公園濕地研究成果發表會・惠蓀林場・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2017</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">行政院環保署北區環境教育區域中心之環境藝術活動對於參與民眾環境素養提升之成效</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">方偉達、吳思儒、楊雅雯、李佳倩、陳章波、謝蕙蓮</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">2017 環境教育學術暨實務交流國際研討會</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2016</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">科學與藝術的對話：建構流域學習之典範轉移</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、謝蕙蓮、陳章波、方偉達</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">2016 國際濕地大會・松山文創園區・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2016</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">濕地青少年教育：以華江雁鴨自然公園為例</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、謝蕙蓮、陳章波</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">中國第一屆濕地論壇・泉州師範大學・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2015</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">社子島環境教育初探</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、方偉達、黃俊翰</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">2016 兩岸濕地聯合研討會・嘉義大學・口頭</p>
+</div>
+</li>
+
+<li style="display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid #C7D3D7">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 700; color: #1C6A7A">2012</span>
+<div style="min-width: 0">
+<p style="margin: 0; font-weight: 500; font-size: 16px; line-height: 1.6">濕地體驗教育對中學生保育態度的影響</p>
+<p style="margin: 2px 0 0; font-size: 14px; color: #384A50">吳思儒、謝蕙蓮、陳章波、黃馨蕙</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475A60">第四屆海峽兩岸人工濕地暨第三屆台灣濕地生態系聯合研討會</p>
+</div>
+</li>
+</ol>
+</details>
+</div>
+</section>
+
+<!-- Writing -->
+<section id="writing" style="background: #E4ECEE; border-top: 1px solid #D3DDE0; border-bottom: 1px solid #D3DDE0">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div>
+<p style="margin: 0 0 8px; font-size: 14px; letter-spacing: 0.12em; color: #1C6A7A; font-weight: 700">05 · WRITING</p>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 40px; line-height: 1.25">文章</h2>
+<p style="margin: 4px 0 0; font-size: 18px; color: #475A60">Columns on rivers, wetlands and city life</p>
+</div>
+<a href="https://bigswell.com.tw/szujuwu/" style="min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-weight: 500; color: #1C6A7A">大浪聚專欄全部文章 All columns on Big Swell<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 16px">
+<a href="https://bigswell.com.tw/urban-flood-preventio/2025/" style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 24px; text-decoration: none; color: #10242B; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 13px; color: #475A60">2025 · 大浪聚 Big Swell</span>
+<span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 600; line-height: 1.45">從東京地下神殿看城市防洪之道</span>
+<span style="font-size: 14px; color: #475A60">What Tokyo’s underground flood channel teaches cities about flood defence</span>
+</a>
+<a href="https://bigswell.com.tw/urban-trees/2024/" style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 24px; text-decoration: none; color: #10242B; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 13px; color: #475A60">2024 · 大浪聚 Big Swell</span>
+<span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 600; line-height: 1.45">城市的天然空調：抗衡氣候變遷的綠色戰士</span>
+<span style="font-size: 14px; color: #475A60">Street trees as the city’s natural air-conditioning against climate change</span>
+</a>
+<a href="https://bigswell.com.tw/guandu-nature-reserve/2022/" style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 24px; text-decoration: none; color: #10242B; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 13px; color: #475A60">2022 · 大浪聚 Big Swell</span>
+<span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 600; line-height: 1.45">關渡自然保留區廢止脈絡與未來經營管理挑戰</span>
+<span style="font-size: 14px; color: #475A60">The delisting of the Guandu Nature Reserve and the management challenges ahead</span>
+</a>
+<a href="https://bigswell.com.tw/citizen-science/2021/" style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 24px; text-decoration: none; color: #10242B; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 13px; color: #475A60">2021 · 大浪聚 Big Swell</span>
+<span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 600; line-height: 1.45">從公民科學為起點的科學公民社會：川流之島流域學校</span>
+<span style="font-size: 14px; color: #475A60">From citizen science to a scientifically engaged civil society</span>
+</a>
+<a href="https://bigswell.com.tw/unpackaged-store/2020/" style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 24px; text-decoration: none; color: #10242B; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 13px; color: #475A60">2020 · 大浪聚 Big Swell</span>
+<span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 600; line-height: 1.45">減量無悔：從洗沐用品看台灣裸裝商店與現行法規</span>
+<span style="font-size: 14px; color: #475A60">Package-free toiletries, Taiwan’s zero-waste shops and the regulations they face</span>
+</a>
+<a href="https://www.villagetaipei.net/Post?PId=14381" style="background: #FFFFFF; border: 1px solid #D3DDE0; border-radius: 6px; padding: 24px; text-decoration: none; color: #10242B; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 13px; color: #475A60">2018 · 臺北村落之聲 Village Taipei</span>
+<span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 600; line-height: 1.45">最重要的小事：富錦街社區人行道規劃參與經驗</span>
+<span style="font-size: 14px; color: #475A60">The small things that matter most: planning a neighbourhood sidewalk together</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact" style="background: #10242B; color: #E8F0F2">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px 72px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-size: 14px; letter-spacing: 0.12em; color: #8CC8D2; font-weight: 700">06 · CONTACT</p>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 40px; line-height: 1.25">聯繫</h2>
+<p style="margin: 0; font-size: 18px; color: #C6DADF">Let’s work together</p>
+<p style="margin: 8px 0 0; font-size: 16px; color: #D3E2E6">歡迎洽談講座、策展、環境教育課程與社會設計合作。</p>
+<p style="margin: 0; font-size: 15px; color: #A6C3C9">Talks, curation, environmental education programmes and social design collaborations are all welcome.</p>
+</div>
+<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 28px 32px; align-content: start">
+<div>
+<dt style="font-size: 13px; letter-spacing: 0.08em; color: #8CC8D2">電子郵件 EMAIL</dt>
+<dd style="margin: 4px 0 0; font-size: 17px"><a href="mailto:szuju@visionunion.com.tw" style="color: #E8F0F2">szuju@visionunion.com.tw</a></dd>
+</div>
+<div>
+<dt style="font-size: 13px; letter-spacing: 0.08em; color: #8CC8D2">電話 PHONE</dt>
+<dd style="margin: 4px 0 0; font-size: 17px">(02) 2581-1365</dd>
+</div>
+<div>
+<dt style="font-size: 13px; letter-spacing: 0.08em; color: #8CC8D2">地址 ADDRESS</dt>
+<dd style="margin: 4px 0 0; font-size: 16px">臺北市中山區新生北路二段 129-2 號<br><span style="color: #A6C3C9; font-size: 14px">No. 129-2, Sec. 2, Xinsheng N. Rd., Zhongshan Dist., Taipei</span></dd>
+</div>
+<div>
+<dt style="font-size: 13px; letter-spacing: 0.08em; color: #8CC8D2">社群 SOCIAL</dt>
+<dd style="margin: 4px 0 0; font-size: 16px"><a href="https://www.linkedin.com/in/szu-ju-wu-6ab262135" style="color: #E8F0F2; min-height: 44px; display: inline-flex; align-items: center">LinkedIn</a></dd>
+</div>
+<div>
+<dt style="font-size: 13px; letter-spacing: 0.08em; color: #8CC8D2">學術檔案 ACADEMIC</dt>
+<dd style="margin: 4px 0 0; font-size: 16px; display: flex; flex-wrap: wrap; gap: 0 18px"><a href="https://scholar.google.com.tw/citations?user=JxwZaZgAAAAJ&amp;hl=zh-TW" style="color: #E8F0F2; min-height: 44px; display: inline-flex; align-items: center">Google Scholar</a><a href="https://orcid.org/0009-0003-7119-587X" style="color: #E8F0F2; min-height: 44px; display: inline-flex; align-items: center">ORCID</a></dd>
+</div>
+</dl>
+</div>
+<div style="max-width: 1160px; margin: 0 auto; padding: 24px; border-top: 1px solid #263E46; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 13px; color: #A6C3C9">
+<span>© 2026 吳思儒 Szu-Ju Wu</span>
+<span>聯絡窗口：景澤創意有限公司 Contact via Vision Union Co., Ltd.</span>
+</div>
+</section>
+
+</div>
 </body>
 </html>

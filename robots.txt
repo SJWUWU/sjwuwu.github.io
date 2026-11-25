@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sjwuwu.github.io/sitemap.xml
